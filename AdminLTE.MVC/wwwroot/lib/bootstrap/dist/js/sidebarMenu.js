@@ -36,7 +36,7 @@
 
                 //标题
                 var $title = $('<span class="title"></span>');
-                $title.addClass('menu-text').text(item.name);
+                $title.addClass('menu-text').text(item.text);
 
                 $a.append($icon);
                 $a.append($title);
@@ -60,7 +60,10 @@
                 }
                 else {
 
-                    $a.attr("href", item.url)
+                    item.urlType = item.urlType ? item.urlType : 'relative';
+                    var href = 'addTabs({id:\'' + item.id + '\',title: \'' + item.text + '\',close: true,url: \'' + item.url + '\',urlType: \'' + item.urlType + '\'});';
+                    $a.attr('onclick', href);
+
                     $a.addClass("nav-link");
                     var badge = $("<span></span>");
                     // <span class="badge badge-success">1</span>

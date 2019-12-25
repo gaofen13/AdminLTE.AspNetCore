@@ -63,7 +63,7 @@ function loadTables(startPage, pageSize) {
             $.each(data.rows, function (i, item) {
                 var tr = "<tr>";
                 tr += "<td align='center'><input type='checkbox' class='checkboxs' value='" + item.id + "'/></td>";
-                tr += "<td>" + item.name + "</td>";
+                tr += "<td>" + item.text + "</td>";
                 tr += "<td>" + (item.code == null ? "" : item.code) + "</td>";
                 tr += "<td>" + (item.url == null ? "" : item.url) + "</td>";
                 tr += "<td>" + (item.type == 0 ? "链接" : "目录") + "</td>";
@@ -113,7 +113,7 @@ function add(type) {
     }
     $("#Id").val("00000000-0000-0000-0000-000000000000");
     $("#Code").val("");
-    $("#Name").val("");
+    $("#Text").val("");
     $("#Type").val(0);
     $("#Url").val("");
     $("#Icon").val("");
@@ -131,7 +131,7 @@ function edit(id) {
         success: function (data) {
             $("#Id").val(data.id);
             $("#ParentId").val(data.parentId);
-            $("#Name").val(data.name);
+            $("#Text").val(data.text);
             $("#Code").val(data.code);
             $("#Type").val(data.type);
             $("#Url").val(data.url);
@@ -146,7 +146,7 @@ function edit(id) {
 };
 //保存
 function save() {
-    var postData = { "dto": { "Id": $("#Id").val(), "ParentId": $("#ParentId").val(), "Name": $("#Name").val(), "Code": $("#Code").val(), "Type": $("#Type").val(), "Url": $("#Url").val(), "Icon": $("#Icon").val(), "SerialNumber": $("#SerialNumber").val(), "Remarks": $("#Remarks").val() } };
+    var postData = { "dto": { "Id": $("#Id").val(), "ParentId": $("#ParentId").val(), "Text": $("#Text").val(), "Code": $("#Code").val(), "Type": $("#Type").val(), "Url": $("#Url").val(), "Icon": $("#Icon").val(), "SerialNumber": $("#SerialNumber").val(), "Remarks": $("#Remarks").val() } };
     $.ajax({
         type: "Post",
         url: "/SysManage/Menu/Edit",

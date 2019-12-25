@@ -89,7 +89,7 @@ namespace AdminLTE.AppService.MenuApp
                     Id = menu.Id,
                     ParentId = menu.ParentId,
                     SerialNumber = menu.SerialNumber,
-                    Name = menu.Name,
+                    Text = menu.Text,
                     Code = menu.Code,
                     Url = menu.Url,
                     Type = menu.Type,

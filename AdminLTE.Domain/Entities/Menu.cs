@@ -23,7 +23,7 @@ namespace AdminLTE.Domain.Entities
         /// <summary>
         /// 菜单名称
         /// </summary>
-        public string Name { get; set; }
+        public string Text { get; set; }
 
         /// <summary>
         /// 菜单编码

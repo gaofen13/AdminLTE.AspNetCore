@@ -12,7 +12,10 @@ namespace AdminLTE.MVC.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            //throw new Exception("异常");
+            return View();
+        }
+        public IActionResult Desktop()
+        {
             return View();
         }
         public IActionResult Logout()
