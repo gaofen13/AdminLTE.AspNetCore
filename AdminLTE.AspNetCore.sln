@@ -11,11 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminLTE.AppService", "Admi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminLTE.Utility", "AdminLTE.Utility\AdminLTE.Utility.csproj", "{34C6C496-B441-48F2-88EF-FA33A4CD48BA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_docs", "_docs", "{973D9776-3CE3-4B0C-8FCF-2DD71A605406}"
-	ProjectSection(SolutionItems) = preProject
-		..\adminlte.aspnetcore.sql = ..\adminlte.aspnetcore.sql
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminLTE.MVC", "AdminLTE.MVC\AdminLTE.MVC.csproj", "{5860D904-1A18-4CE5-917F-2A6F80B09640}"
 EndProject
 Global
