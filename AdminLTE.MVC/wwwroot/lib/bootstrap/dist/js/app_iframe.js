@@ -2009,11 +2009,12 @@ function closeTabByPageId(pageId) {
             activePageId = getPageId($title.prev());
         };
 
-        //setTimeout(function () {
-        //    //某种bug，需要延迟执行
-        //    activeTabByPageId(activePageId);
-        //}, 100);
-
+        if (activePageId) {
+            setTimeout(function () {
+                //某种bug，需要延迟执行
+                activeTabByPageId(activePageId);
+            }, 100);
+        }
     } else {
         //要关闭的tab不处于活动状态
         //直接移除就可以了,不用传active class
