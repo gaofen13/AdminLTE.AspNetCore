@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AdminLTE.Domain.Entities;
+﻿using AdminLTE.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace AdminLTE.EntityFrameworkCore

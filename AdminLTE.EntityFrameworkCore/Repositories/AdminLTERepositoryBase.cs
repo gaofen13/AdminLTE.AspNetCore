@@ -1,13 +1,9 @@
 ﻿using AdminLTE.Domain;
 using AdminLTE.Domain.IRepositories;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reflection;
-using System.Threading.Tasks;
 
 namespace AdminLTE.EntityFrameworkCore.Repositories
 {
@@ -202,9 +198,9 @@ namespace AdminLTE.EntityFrameworkCore.Repositories
     /// 主键为Guid类型的仓储基类
     /// </summary>
     /// <typeparam name="TEntity">实体类型</typeparam>
-    public abstract class FonourRepositoryBase<TEntity> : AdminLTERepositoryBase<TEntity, Guid> where TEntity : Entity
+    public abstract class AdminLTERepositoryBase<TEntity> : AdminLTERepositoryBase<TEntity, Guid> where TEntity : Entity
     {
-        public FonourRepositoryBase(AdminDbContext dbContext) : base(dbContext)
+        public AdminLTERepositoryBase(AdminDbContext dbContext) : base(dbContext)
         {
         }
     }

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AdminLTE.Domain.Entities;
 using AdminLTE.Domain.IRepositories;
 using AdminLTE.AppService.UserApp.Dtos;

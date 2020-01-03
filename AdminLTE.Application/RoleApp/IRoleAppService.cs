@@ -1,9 +1,6 @@
-﻿using AdminLTE.AppService.MenuApp.Dtos;
-using AdminLTE.AppService.RoleApp.Dtos;
+﻿using AdminLTE.AppService.RoleApp.Dtos;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AdminLTE.AppService.RoleApp
 {

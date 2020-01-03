@@ -1,16 +1,14 @@
 ﻿using AdminLTE.Domain.Entities;
 using AdminLTE.Domain.IRepositories;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace AdminLTE.EntityFrameworkCore.Repositories
 {
     /// <summary>
     /// 用户管理仓储实现
     /// </summary>
-    public class UserRepository : FonourRepositoryBase<User>, IUserRepository
+    public class UserRepository : AdminLTERepositoryBase<User>, IUserRepository
     {
         public UserRepository(AdminDbContext dbcontext) : base(dbcontext)
         {

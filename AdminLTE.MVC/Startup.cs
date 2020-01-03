@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO;
 using AdminLTE.AppService;
 using AdminLTE.AppService.DepartmentApp;
 using AdminLTE.AppService.MenuApp;
@@ -13,7 +9,6 @@ using AdminLTE.EntityFrameworkCore;
 using AdminLTE.EntityFrameworkCore.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

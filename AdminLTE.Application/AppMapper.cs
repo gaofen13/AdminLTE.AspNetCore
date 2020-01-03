@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AutoMapper;
+﻿using AutoMapper;
 using AdminLTE.AppService.DepartmentApp.Dtos;
 using AdminLTE.AppService.MenuApp.Dtos;
 using AdminLTE.AppService.RoleApp.Dtos;

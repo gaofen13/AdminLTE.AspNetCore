@@ -3,11 +3,10 @@ using AdminLTE.Domain.IRepositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace AdminLTE.EntityFrameworkCore.Repositories
 {
-    public class RoleRepository : FonourRepositoryBase<Role>, IRoleRepository
+    public class RoleRepository : AdminLTERepositoryBase<Role>, IRoleRepository
     {
         public RoleRepository(AdminDbContext dbcontext) : base(dbcontext)
         {
